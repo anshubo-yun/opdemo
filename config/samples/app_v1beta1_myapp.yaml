@@ -1,0 +1,19 @@
+apiVersion: app.qingcloud/v1beta1
+kind: MyApp
+metadata:
+  name: myapp-sample
+  #annotations:
+    #old-spec: "size: 2
+               #image: nginx:1.7.9
+               #ports:
+                 #- port: 80
+                   #targetPort: 80
+                   #nodePort: 30002"
+spec:
+  # TODO(user): Add fields here
+  size: 3
+  image: nginx:1.7.9
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30002

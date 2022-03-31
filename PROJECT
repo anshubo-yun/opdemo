@@ -1,0 +1,19 @@
+domain: qingcloud
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: opdemo
+repo: github.com/shuboan-yun/opdemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: qingcloud
+  group: app
+  kind: MyApp
+  path: github.com/shuboan-yun/opdemo/api/v1beta1
+  version: v1beta1
+version: "3"
